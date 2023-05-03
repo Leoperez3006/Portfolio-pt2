@@ -19,13 +19,15 @@
   nav {
     border-radius:50px;
     margin: 0;
-    background-color: #42097028;
+    background-color: #42097065;
     color: #fff;
     display: flex;
     justify-content: space-between;
     align-items: center;
     padding: 0 20px;
     height: 80px;
+    padding-left: 5%;
+    padding-right: 5%;
   }
   
   ul {

@@ -9,6 +9,7 @@ import { createRouter, createWebHistory } from 'vue-router'
 import './assets/global.css'
 
 const routes = [
+  { path: '/', component:About },
   { path: '/about', component: About},
   { path: '/projects', component: Projects },
   { path: '/experience', component: Experience },
