@@ -15,15 +15,12 @@ body {
   position: fixed;
 }
 
-.page-container {
-  padding-left: 5%;
-  padding-right: 5%;
-
-}
-
 .photo {
-  max-width: 90%;
-  min-width: 90%px;
+  object-fit: cover;
+  width: 95%;
+  min-height: 200px;
+  max-height: 200px;
+  /* max-width: 90%; */
 }
 
 .fade-enter-active,
@@ -35,12 +32,18 @@ body {
 .fade-leave-to {
   opacity: 0;
 }
+.page-container {
+  padding-left: 5%;
+  padding-right: 5%;
 
+}
 .projects-background-color {
   background-color: #0a0018a2;
   position: fixed;
   height: 100vh;
   width: 100vw;
+  overflow-y:auto;
+  overflow-x: hidden;
 }
 
 .wrap {
@@ -76,14 +79,18 @@ body {
 
 .animated-box {
   font-family: "Poppins", sans-serif;
-  max-width: 300px;
-  height: 600px;
-  padding-left: 15px;
-  padding-right: 15px;
-  padding-top: 5px;
+
+
+  padding-left: 10%;
+  padding-right: 10%;
+  padding-top: 30%;
   padding-bottom: 5px;
+  
+  margin-left: 0px;
+  margin-right: 7rem;
   margin-top: 15px;
   margin-bottom: 15px;
+
   text-align: center;
   border-radius: 15px;
   background-color: #d3d3d318;

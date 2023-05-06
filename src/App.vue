@@ -6,15 +6,20 @@
 </template>
 
 
-<script>
+<script setup >
 import Navbar from './components/Navbar.vue'
+import { ref, onMounted } from 'vue';
 
-export default {
-  name: 'App',
-  components: {
-    Navbar,
-  },
-};
+const deviceType = ref("");
+// const device = ref("");
+
+onMounted(() => {
+  deviceType.value = navigator?.userAgentData?.platform.toLowerCase();
+  console.log(deviceType.value)
+
+})
+
+
 </script>
 
 <style scoped>

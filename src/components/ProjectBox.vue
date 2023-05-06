@@ -1,13 +1,11 @@
 <template>
-  <div class="animated-box in">
+  <div class="animated-box conditional-size">
     <div class="col">
       <div class="row">
         <h2>{{ title }}</h2>
       </div>
       <div class="row">
         <img className = "photo" :src="props.images[0]" />
-        <!-- <Carousel2/> -->
-        <!-- <component :is="Carousel" /> -->
       </div>
       <div class="row">
         <component :is="ScrollArea" :height="definedHeight" :content="description" />
@@ -34,5 +32,8 @@ const props = defineProps({
 </script>
 
 <style scoped>
-
+.conditional-size{
+  width: 300px;
+  height: 600px;
+}
 </style>

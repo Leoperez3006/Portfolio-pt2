@@ -1,13 +1,11 @@
 <template>
   <div class="page-container projects-background-color">
-    <h1>Major projects</h1>
-    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+
     <div class="project-container">
       <div v-for="project in projects" :key="project.id">
       <ProjectBox class="project" :title="project.title" :description="project.description" :link="project.link" :images="project.images" />
     </div>
     </div>
-
   </div>
 </template>
 
@@ -80,14 +78,28 @@ const projects = ref([
 
 <style scoped>
 .project-container{
-  width: 100vw;
-  margin: 20px;
   display: flex;
-  flex-wrap: wrap;
-  justify-content: space-around;
+  overflow-x: auto;
   align-items: center;
-  
+
+}
+.project-container::-webkit-scrollbar {
+  display: none;
 }
 
+.page-container {
+  padding-left: 5%;
+  padding-right: 5%;
+
+}
+
+.projects-background-color {
+  background-color: #0a0018a2;
+  position: fixed;
+  height: 100vh;
+  width: 100vw;
+  overflow-y:auto;
+  overflow-x: hidden;
+}
 
 </style>

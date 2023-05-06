@@ -16,7 +16,6 @@
   <style scoped>
     .scrollable-area::-webkit-scrollbar {
       display: none;
-      
     }
     .scrollable-area{
       overflow-y: auto;
