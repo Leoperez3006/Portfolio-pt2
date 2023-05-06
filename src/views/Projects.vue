@@ -78,6 +78,7 @@ const projects = ref([
 
 <style scoped>
 .project-container{
+  max-width: 90%;
   display: flex;
   overflow-x: auto;
   align-items: center;
